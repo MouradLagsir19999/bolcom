@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winkelwagen | bol.com demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">bol.com</div>
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Verder winkelen" />
+      <div id="searchSuggestions" class="suggestions"></div>
+    </div>
+    <nav class="top-actions">
+      <a href="index.html">Home</a>
+      <a href="klantenservice.html">Klantenservice</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs">Winkelwagen</div>
+        <h1>Controleer je bestelling</h1>
+      </div>
+      <a class="link" href="index.html">Verder winkelen</a>
+    </div>
+
+    <div class="layout">
+      <section id="cartList"></section>
+      <aside id="cartSummary"></aside>
+    </div>
+  </main>
+
+  <div id="miniCart" class="mini-cart"></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bol.com | De winkel van ons allemaal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">bol.com</div>
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Waar ben je naar op zoek?" autocomplete="off" />
+      <div id="searchSuggestions" class="suggestions"></div>
+    </div>
+    <nav class="top-actions">
+      <a href="klantenservice.html">Klantenservice</a>
+      <a href="cart.html" class="cart-link">Winkelwagen <span id="cartCount" class="badge">0</span></a>
+      <a href="#" class="cta">Maak bol.com je homepage</a>
+    </nav>
+  </header>
+
+  <nav class="category-bar">
+    <a href="category.html?category=Elektronica">Elektronica</a>
+    <a href="category.html?category=Speelgoed">Speelgoed</a>
+    <a href="category.html?category=Boeken">Boeken</a>
+    <a href="category.html?category=Huis & Tuin">Huis & Tuin</a>
+    <a href="category.html?category=Gaming">Gaming</a>
+    <a href="category.html?category=Mode">Mode</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="Promoties">
+      <div class="hero-text">
+        <p class="eyebrow">Snel in huis</p>
+        <h1>Pak uit met cadeaus voor iedereen</h1>
+        <p>Van games tot gadgets, vind alles wat je zoekt met snelle levering.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="category.html?category=Elektronica">Bekijk Elektronica</a>
+          <a class="button ghost" href="klantenservice.html">Service &amp; retouren</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Cadeaus stapel" />
+        <div class="hero-bubble">Vandaag besteld, morgen in huis*</div>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Populaire categorieën">
+      <header class="section-header">
+        <h2>Populaire categorieën</h2>
+        <a class="link" href="category.html">Bekijk alles</a>
+      </header>
+      <div id="popularCategories" class="card-grid"></div>
+    </section>
+
+    <section class="grid" aria-label="Aanbevolen">
+      <header class="section-header">
+        <h2>Aanbevolen voor jou</h2>
+        <a class="link" href="category.html?category=Aanbevolen">Meer deals</a>
+      </header>
+      <div id="featuredGrid" class="product-grid"></div>
+    </section>
+
+    <section class="banner" aria-label="App download">
+      <div class="banner-content">
+        <h3>Shop sneller met de bol.com app</h3>
+        <p>Ontdek gepersonaliseerde tips, deals en eenvoudig retourneren.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#">Download voor iOS</a>
+          <a class="button ghost" href="#">Download voor Android</a>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=700&q=80" alt="Mobiele telefoon" />
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Klantenservice</h4>
+        <ul>
+          <li><a href="klantenservice.html">Alle onderwerpen</a></li>
+          <li><a href="klantenservice.html#contact">Contact opnemen</a></li>
+          <li><a href="klantenservice.html#retour">Retourneren</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Over bol.com</h4>
+        <ul>
+          <li><a href="#">Vacatures</a></li>
+          <li><a href="#">Duurzaamheidsbeleid</a></li>
+          <li><a href="#">Pers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Zakelijk</h4>
+        <ul>
+          <li><a href="#">Zakelijk verkopen</a></li>
+          <li><a href="#">Adverteren</a></li>
+          <li><a href="#">Affiliate programma</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blijf op de hoogte</h4>
+        <p>Ontvang deals en tips rechtstreeks in je inbox.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="E-mailadres" aria-label="E-mailadres" />
+          <button type="button">Aanmelden</button>
+        </div>
+      </div>
+    </div>
+    <div class="legal">© 2025 bol.com demo. Gemaakt voor een UI-demo.</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
