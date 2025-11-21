@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product | bol.com demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">bol.com</div>
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Zoek producten" />
+      <div id="searchSuggestions" class="suggestions"></div>
+    </div>
+    <nav class="top-actions">
+      <a href="klantenservice.html">Klantenservice</a>
+      <a href="cart.html" class="cart-link">Winkelwagen <span id="cartCount" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <nav class="category-bar">
+    <a href="index.html">Home</a>
+    <a href="category.html?category=Elektronica">Elektronica</a>
+    <a href="category.html?category=Speelgoed">Speelgoed</a>
+    <a href="category.html?category=Boeken">Boeken</a>
+    <a href="category.html?category=Huis & Tuin">Huis & Tuin</a>
+    <a href="category.html?category=Gaming">Gaming</a>
+    <a href="category.html?category=Mode">Mode</a>
+  </nav>
+
+  <main>
+    <section id="productDetail"></section>
+  </main>
+
+  <div id="miniCart" class="mini-cart"></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

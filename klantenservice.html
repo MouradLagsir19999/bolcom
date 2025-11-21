@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klantenservice | bol.com demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">bol.com</div>
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Waarmee kunnen we helpen?" />
+      <div id="searchSuggestions" class="suggestions"></div>
+    </div>
+    <nav class="top-actions">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="cart-link">Winkelwagen <span id="cartCount" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs">Klantenservice</div>
+        <h1>Hoe kunnen we je helpen?</h1>
+        <p>Veelgestelde onderwerpen en snelle links.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button ghost" href="#contact">Contact</a>
+        <a class="button primary" href="#faqAccordion">Bekijk FAQ</a>
+      </div>
+    </div>
+
+    <section class="grid">
+      <header class="section-header">
+        <h2>Snelle acties</h2>
+      </header>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Bestelling volgen</h3>
+          <p>Volg je pakket realtime en ontvang notificaties.</p>
+          <a class="link" href="#">Open je account</a>
+        </article>
+        <article class="card">
+          <h3 id="retour">Retourneren</h3>
+          <p>Regel gratis retour binnen 30 dagen met een label.</p>
+          <a class="link" href="#">Meld een retour</a>
+        </article>
+        <article class="card">
+          <h3>Betalen en facturen</h3>
+          <p>Download facturen en pas je betaalmethode aan.</p>
+          <a class="link" href="#">Bekijk betalingen</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <header class="section-header">
+        <h2>Veelgestelde vragen</h2>
+      </header>
+      <div id="faqAccordion" class="accordion"></div>
+    </section>
+
+    <section id="contact" class="grid">
+      <header class="section-header">
+        <h2>Contact opnemen</h2>
+      </header>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Chat</h3>
+          <p>Gemiddelde wachttijd: 2 minuten.</p>
+          <button class="add-btn">Start chat</button>
+        </article>
+        <article class="card">
+          <h3>Bel ons</h3>
+          <p>Bel tussen 08:00 en 22:00 voor directe hulp.</p>
+          <button class="add-btn">Bel 0800-1234</button>
+        </article>
+        <article class="card">
+          <h3>Community</h3>
+          <p>Stel je vraag aan andere klanten en experts.</p>
+          <button class="add-btn">Naar community</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="miniCart" class="mini-cart"></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
